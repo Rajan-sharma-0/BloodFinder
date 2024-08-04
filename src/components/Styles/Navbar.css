@@ -1,0 +1,62 @@
+.navbar{
+    width: 100vw;
+    max-width: 100%;
+    height: max-content;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(188, 188, 188);
+}
+.navbarMain{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoImage{
+    cursor: pointer;
+    /* width: 50px; */
+}
+.navbar img{
+    width: 50px;
+}
+
+.navbarElements ul{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10vw;
+}
+.navbarElements ul .navbarListElements{
+    background-color: rgb(232, 232, 238);
+    border-radius: 3px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.navbarElements ul .navbarListElements:hover{
+    background-color: rgb(172, 171, 171);
+    color: white;
+}
+.navbarElements ul .navbarListElements span{
+    font-size: 1.1rem;
+    font-family: poppins;
+    text-decoration: none;
+    color: rgb(99, 97, 97);
+}
+.navbarElements ul .navbarListElements button{
+    font-size: 1.1rem;
+    font-family: poppins;
+    padding: 5px 10px;
+    border: 1px solid rgb(223, 107, 107);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navbarElements ul .navbarListElements button:hover{
+    background-color: rgb(223, 107, 107);
+    color: white;
+}

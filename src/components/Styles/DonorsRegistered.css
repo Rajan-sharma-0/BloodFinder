@@ -1,0 +1,30 @@
+.donorsRegistered{
+    width: 100vw;
+    max-width: 100%;
+    height: 30vh;
+    background-color: rgb(255, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donorsRegisteredContainer{
+    width: 25%;
+    height: 80%;
+    min-width: 300px;
+    background-color: rgb(216, 26, 26);
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.donorsRegisteredContainer span{
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: white;
+    font-family: poppins;
+}
+.donorsRegisteredContainer span:first-child{
+    font-weight: 700;
+}

@@ -1,0 +1,179 @@
+/* Base styles */
+.container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw;
+    max-width: 100%;
+    /* padding: 2em; */
+    background-color: #e1dadafc; /* Optional: Light background for contrast */
+  }
+  
+  .registration-form {
+    max-width: 600px;
+    width: 100%;
+    margin: 2em 0; /* Top and bottom margin */
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.7); /* Fully transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for visibility */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling */
+    
+    /* max-height: 80vh; */
+  }
+  .registration-form h1{
+    font-size: 2rem;
+    font-weight:700;
+    margin-bottom: 30px;
+    -webkit-text-stroke: 1px rgba(201, 9, 9, 0.63);
+  }
+  /* .registration-form h1 */
+
+  /* Form element styles */
+  .registration-form label {
+    display: block;
+    margin-bottom: 1.2em;
+    color: #000; /* White text color for contrast on transparent background */
+    font-weight: bold;
+  }
+  
+  .registration-form input,
+  .registration-form select {
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+    padding: 0.8em;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for input fields */
+    color: #333; /* Dark text color for readability */
+    transition: border-color 0.3s;
+  }
+  
+  .registration-form input:focus,
+  .registration-form select:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .registration-form button {
+    padding: 0.8em;
+    color: #fff;
+    background-color: #c30000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    font-size: 1.4em;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .registration-form button:hover {
+    background-color: #b30000;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .registration-form {
+      padding: 1.5em;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .registration-form {
+      padding: 1em;
+    }
+  
+    .registration-form label {
+      margin-bottom: 1em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .registration-form {
+      padding: 0.8em;
+    }
+  
+    .registration-form label {
+      font-size: 0.9em;
+      margin-bottom: 0.8em;
+    }
+  
+    .registration-form input,
+    .registration-form select {
+      padding: 0.7em;
+      font-size: 0.9em;
+    }
+  
+    .registration-form button {
+      padding: 0.7em;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .registration-form {
+      padding: 0.5em;
+    }
+  
+    .registration-form label {
+      font-size: 1.4rem;
+      margin-bottom: 0.6em;
+    }
+  
+    .registration-form input,
+    .registration-form select {
+      padding: 0.5em;
+      font-size: 0.8em;
+    }
+  
+    .registration-form button {
+      padding: 0.6em;
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Flexbox adjustments for containers */
+  .name-container,
+  .gender-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .name-container label,
+  .gender-container label {
+    flex: 1 1 48%;
+  }
+  .backButton{
+    width: 120px;
+    background-color: rgb(194, 99, 99);
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .backButton span{
+    color: white;
+
+  }
+  .backButton img{
+    width: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .name-container label,
+    .gender-container label {
+      flex: 1 1 100%;
+    }
+  }
+  
