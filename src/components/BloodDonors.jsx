@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { DonorContext } from '../DonorContext'
 import './Styles/BloodDonors.css'
 import { useNavigate } from 'react-router-dom'
+import Navbar from './Navbar.jsx'
 export default function BloodDonors() {
     const {donors} = useContext(DonorContext)
     const navigate = useNavigate();
@@ -14,6 +15,7 @@ export default function BloodDonors() {
     // console.log("donrs ", donors)
   return (
     <div className='bloodDonors'>
+      <Navbar/>
         <div className="bloodDonorsMain">
             <div className="bloodDonorsFind" onClick={handleBackClick}>
                 <span>Find Blood</span>

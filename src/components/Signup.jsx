@@ -4,8 +4,7 @@ import { signup } from "./auth";
 import { createUser } from "./users";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserContext";
-import { auth } from "../Firebase";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+
 
 function Signup() {
   const [showPassword, setShowPassword] = useState(false);
@@ -17,6 +16,7 @@ function Signup() {
   // const {  } = useContext(UserContext);
   const navigate = useNavigate();
 
+  
 
 
   const handleSubmit = async (e) => {
@@ -33,7 +33,7 @@ function Signup() {
         await createUser(userInfo);
         console.log(userInfo);
         setUser(userInfo);
-        navigate('/checkverification')
+        navigate('/')
       } else {
         setErrorMessage("Passwords do not match");
       }

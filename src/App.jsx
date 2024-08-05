@@ -10,7 +10,6 @@ import { DonorProvider } from './DonorContext'
 import BloodDonors from './components/BloodDonors'
 import Homepage from './components/Homepage'
 import Navbar from './components/Navbar'
-import CheckVerification from './components/CheckVerification'
 
 function App() {
 
@@ -25,14 +24,9 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/bloodfind" element={<BloodFind />} />
-        <Route path="/checkverification" element={<CheckVerification/>} />
         <Route path="/donorlist" element={<BloodDonors/>} />
       </Routes>
     </BrowserRouter>
-    {/* <Login/> */}
-{/* <Registration/> */}
-{/* <Signup/> */}
-{/* <BloodFind/> */}
    </div>
    </DonorProvider>
    </UserProvider>

@@ -8,7 +8,7 @@ const createUser = async (userInfo)=>{
         console.log("User Added with id ", docRef.id)
         return docRef.id;
     } catch (error) {
-        console.log("Something unexpected occured while creting user ", user)
+        console.log("Something unexpected occured while creting user ", error.message)
     }
 }
 const createDonor = async(userInfo)=>{

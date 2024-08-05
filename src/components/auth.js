@@ -13,30 +13,16 @@ const signup = async (email, password) => {
       password
     );
     const user = userCredentials.user;
-    await sendEmailVerification(user);
-    console.log("Verification email sent to your inbox");
+    console.log("User from signup:", user); 
+    // await sendEmailVerification(user);
+    // console.log("Verification email sent to your inbox");
     return user;
   } catch (error) {
+    console.log("An error occured in signup ", error.message)
     throw error;
   }
 };
-// useEffect(() => {
-//   const unsubscribe = onAuthStateChanged(auth, (user) => {
-//     if (user) {
-//       if (user.emailVerified) {
-//         console.log("Email is verified.");
-//         setIsVerified(true);
-//       } else {
-//         console.log("Email is not verified.");
-//         setIsVerified(false);
-//       }
-//     } else {
-//       console.log("No user is signed in.");
-//     }
-//   });
 
-//   return () => unsubscribe();
-// }, [setIsVerified]);
 const login = async (email, password) => {
   try {
     const userCredentials = await signInWithEmailAndPassword(
