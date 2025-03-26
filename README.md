@@ -37,8 +37,7 @@ BloodFinder is a web application designed to connect blood donors with recipient
 ## 📌 Contributing
 Contributions are welcome! Feel free to submit issues or pull requests.
 
-## 📜 License
-This project is licensed under the MIT License.
+
 
 ## 💌 Contact
 📧 Email: [your-email@example.com](mailto:your-email@example.com)  
