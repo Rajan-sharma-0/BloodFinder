@@ -40,7 +40,7 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 
 
 ## 💌 Contact
-📧 Email: [your-email@example.com](mailto:your-email@example.com)  
+🔗 GitHub: [Ayush Panwar](https://github.com/ayush-cp)
 🔗 GitHub: [Rajan Sharma](https://github.com/Rajan-sharma-0)
 
 ---
